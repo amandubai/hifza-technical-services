@@ -74,9 +74,13 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
+.logo img {
+    width: 190px;
+    height: auto;
+    display: block;
+}
 .logo-mark {
     width: 45px;
     height: 45px;
