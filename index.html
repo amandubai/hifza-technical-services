@@ -1,472 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Hifza Technical Services provides AC service, AC installation, plumbing, handyman, tiling, flooring, duct cleaning, sanitization, painting and carpentry services in Dubai, UAE.">
-
-    <meta name="keywords" content="AC service Dubai, AC installation Dubai, plumbing Dubai, handyman Dubai, painting Dubai, duct cleaning Dubai, carpentry Dubai, Hifza Technical Services">
-
-    <meta name="author" content="Hifza Technical Services">
-
-    <title>Hifza Technical Services | Dubai UAE</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hifza Technical Services | Dubai</title>
+<meta name="description" content="AC, electrical, plumbing, painting and home maintenance services in Dubai. Contact Hifza Technical Services for a quotation.">
+<style>
+:root{--gold:#d8b56a;--black:#0c0c0e;--card:#19191c;--white:#f8f5ed}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--white);font-family:Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;gap:18px;border-bottom:1px solid #383027;background:#101012;flex-wrap:wrap}
+.logo{font-size:21px;font-weight:bold;color:var(--gold)}
+.logo small{display:block;font-size:10px;letter-spacing:3px;color:white}
+nav{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{padding:90px 8%;background:radial-gradient(ellipse at 85% 20%,#46361b,transparent 40%),#101012}
+.tag{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(40px,7vw,70px);line-height:1.1;max-width:800px;margin:20px 0}
+h1 span,h2 span{color:var(--gold)}
+.hero p{max-width:650px;color:#c8c2b7;font-size:18px}
+.btn{display:inline-block;background:var(--gold);color:#17130b;padding:13px 20px;border-radius:5px;font-weight:bold;margin:12px 8px 0 0}
+.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+section{padding:65px 7%}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2,h2{font-size:clamp(28px,4vw,42px);line-height:1.2}
+.heading p,.about p{color:#bbb5aa}
+.services{background:#111113}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:var(--card);padding:24px;border:1px solid #393127;border-radius:10px}
+.card:hover{border-color:var(--gold)}
+.symbol{font-size:30px;color:var(--gold)}
+.card h3{margin:8px 0}
+.card p{color:#bbb5aa;font-size:14px}
+.card a{color:var(--gold);font-size:13px;font-weight:bold}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-box{padding:35px;border:1px solid #68512b;border-radius:12px;background:linear-gradient(140deg,#292216,#151517);text-align:center}
+.about-box strong{font-size:30px;color:var(--gold)}
+.contact{background:#151517}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact p{color:#c5beb2;overflow-wrap:anywhere}
+form{background:#202023;padding:25px;border-radius:10px;border:1px solid #443925}
+input,select,textarea{width:100%;padding:13px;margin:7px 0 14px;background:#101012;color:white;border:1px solid #4a4030;border-radius:5px;font:inherit}
+label{font-size:13px}
+button{border:0;cursor:pointer;font-size:15px}
+footer{text-align:center;padding:28px 15px;color:#aaa;border-top:1px solid #393127;font-size:13px}
+@media(max-width:750px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about,.contact-grid{grid-template-columns:1fr}header{padding:16px 5%}nav{gap:12px}.hero{padding:65px 6%}section{padding:50px 5%}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}nav{font-size:13px}.hero p{font-size:16px}}
+</style>
 </head>
-
 <body>
-
-    <!-- TOP BAR -->
-    <div class="topbar">
-        <div>📞 +971 54 314 5524</div>
-        <div>✉️ hifzatechnicalservices@gmail.com</div>
-        <div>📍 Dubai, UAE</div>
-        <div>🕐 Sat–Thu: 8:00 AM – 8:00 PM</div>
-    </div>
-
-
-    <!-- HEADER -->
-    <header class="header">
-
-        <a class="logo" href="#home">
-    <img src="./logo.png"
-     alt="Hifza Technical Services Logo"
-     class="logo">
-</a>
-
-        <button class="menu-btn" aria-label="Open menu">
-            ☰
-        </button>
-
-        <nav id="nav">
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#why-us">Why Choose Us</a>
-            <a href="#contact">Contact</a>
-
-            <a class="quote-btn" href="#contact">
-                GET A QUOTE
-            </a>
-        </nav>
-
-    </header>
-
-
-    <!-- MAIN -->
-    <main>
-
-        <!-- HERO -->
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    PROFESSIONAL & RELIABLE
-                </p>
-
-                <h1>
-                    HIFZA TECHNICAL
-                    <br>
-                    <span>SERVICES</span>
-                </h1>
-
-                <p class="lead">
-                    Professional technical and maintenance services
-                    for homes, villas, offices and commercial spaces
-                    across Dubai.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a class="btn dark" href="tel:+971543145524">
-                        📞 CALL NOW
-                    </a>
-
-                    <a
-                        class="btn orange"
-                        href="https://wa.me/971543145524?text=Hello%20Hifza%20Technical%20Services%2C%20I%20need%20a%20service."
-                        target="_blank"
-                    >
-                        💬 WHATSAPP NOW
-                    </a>
-
-                </div>
-
-
-                <div class="trust-row">
-
-                    <div>
-                        <strong>✓ Skilled Team</strong>
-                        <small>Experienced Professionals</small>
-                    </div>
-
-                    <div>
-                        <strong>★ Quality Work</strong>
-                        <small>Customer Satisfaction</small>
-                    </div>
-
-                    <div>
-                        <strong>◷ On Time</strong>
-                        <small>Fast & Reliable Service</small>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-art">
-
-                <div class="ac-unit">
-                    ❄️
-                </div>
-
-                <div class="technician">
-                    👨‍🔧
-                </div>
-
-                <div class="city">
-                    DUBAI
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- SERVICES -->
-        <section class="services section" id="services">
-
-            <p class="eyebrow center">
-                OUR SERVICES
-            </p>
-
-            <h2>
-                Professional Technical Services
-            </h2>
-
-            <p class="section-sub">
-                Reliable maintenance and technical solutions
-                for residential and commercial properties in Dubai.
-            </p>
-
-
-            <div class="service-grid">
-
-                <article class="service-card">
-                    <div class="icon">❄️</div>
-                    <h3>AC Service</h3>
-                    <p>
-                        AC inspection, servicing, troubleshooting
-                        and regular maintenance for better cooling.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🔧</div>
-                    <h3>AC Installation</h3>
-                    <p>
-                        Professional AC installation for homes,
-                        offices, villas and commercial spaces.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🧹</div>
-                    <h3>AC Duct Cleaning</h3>
-                    <p>
-                        Professional duct cleaning to remove dust,
-                        dirt and buildup from AC systems.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🧼</div>
-                    <h3>AC Sanitization</h3>
-                    <p>
-                        AC sanitization service to help maintain
-                        a cleaner and fresher indoor environment.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🚰</div>
-                    <h3>Plumbing Service</h3>
-                    <p>
-                        Plumbing repair, leakage fixing, fittings,
-                        pipe work and general maintenance.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🛠️</div>
-                    <h3>Handyman Service</h3>
-                    <p>
-                        General repair, installation and maintenance
-                        services for homes and commercial properties.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🏠</div>
-                    <h3>Tiling & Flooring</h3>
-                    <p>
-                        Professional tiling and flooring work for
-                        residential and commercial spaces.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🎨</div>
-                    <h3>Painting Service</h3>
-                    <p>
-                        Interior and exterior painting solutions
-                        for homes, villas, offices and shops.
-                    </p>
-                </article>
-
-
-                <article class="service-card">
-                    <div class="icon">🪚</div>
-                    <h3>Carpentry Works</h3>
-                    <p>
-                        Furniture repair, woodwork, installation
-                        and general carpentry services.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- WHY CHOOSE US -->
-        <section class="split section" id="why-us">
-
-            <div class="why">
-
-                <p class="eyebrow">
-                    WHY CHOOSE US
-                </p>
-
-                <h2>
-                    Reliable Service You Can Trust
-                </h2>
-
-                <ul>
-                    <li>Experienced & skilled technicians</li>
-                    <li>Quality workmanship</li>
-                    <li>Affordable & transparent pricing</li>
-                    <li>Fast and reliable service</li>
-                    <li>Residential & commercial solutions</li>
-                    <li>Customer-focused support</li>
-                </ul>
-
-            </div>
-
-
-            <!-- ABOUT -->
-            <div class="about" id="about">
-
-                <p class="eyebrow">
-                    ABOUT US
-                </p>
-
-                <h2>
-                    Hifza Technical Services
-                </h2>
-
-                <p>
-                    Hifza Technical Services provides professional
-                    technical and maintenance solutions in Dubai, UAE.
-                </p>
-
-                <p>
-                    We provide services for homes, villas, offices,
-                    shops and commercial properties.
-                </p>
-
-                <p>
-                    Our goal is simple — quality workmanship,
-                    honest communication and reliable customer service.
-                </p>
-
-                <a class="btn dark" href="#contact">
-                    CONTACT US
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- CTA -->
-        <section class="cta">
-
-            <div>
-
-                <p class="eyebrow">
-                    NEED A TECHNICAL SERVICE?
-                </p>
-
-                <h2>
-                    Let's Get Your Job Done Right.
-                </h2>
-
-            </div>
-
-
-            <a
-                class="btn orange"
-                href="https://wa.me/971543145524?text=Hello%20Hifza%20Technical%20Services%2C%20I%20would%20like%20a%20quotation."
-                target="_blank"
-            >
-                REQUEST A QUOTE
-            </a>
-
-        </section>
-
-
-
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-
-            <p class="eyebrow center">
-                CONTACT US
-            </p>
-
-            <h2>
-                Get In Touch With Hifza
-            </h2>
-
-
-            <div class="contact-grid">
-
-
-                <div class="contact-card">
-
-                    <span>📞</span>
-
-                    <h3>
-                        Call Us
-                    </h3>
-
-                    <a href="tel:+971543145524">
-                        +971 54 314 5524
-                    </a>
-
-                </div>
-
-
-
-                <div class="contact-card">
-
-                    <span>💬</span>
-
-                    <h3>
-                        WhatsApp
-                    </h3>
-
-                    <a
-                        href="https://wa.me/971543145524"
-                        target="_blank"
-                    >
-                        Chat With Us
-                    </a>
-
-                </div>
-
-
-
-                <div class="contact-card">
-
-                    <span>✉️</span>
-
-                    <h3>
-                        Email Us
-                    </h3>
-
-                    <a href="mailto:hifzatechnicalservices@gmail.com">
-                        hifzatechnicalservices@gmail.com
-                    </a>
-
-                </div>
-
-
-
-                <div class="contact-card">
-
-                    <span>📍</span>
-
-                    <h3>
-                        Location
-                    </h3>
-
-                    <p>
-                        Dubai, United Arab Emirates
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-brand">
-
-            <b>HIFZA</b>
-
-            <span>
-                TECHNICAL SERVICES
-            </span>
-
-        </div>
-
-        <p>
-            Professional Technical Services in Dubai
-        </p>
-
-        <p>
-            © <span id="year"></span>
-            Hifza Technical Services.
-            All Rights Reserved.
-        </p>
-
-    </footer>
-
-
-
-    <!-- FLOATING WHATSAPP -->
-    <a
-        class="floating-wa"
-        href="https://wa.me/971543145524?text=Hello%20Hifza%20Technical%20Services"
-        target="_blank"
-        aria-label="WhatsApp"
-    >
-        💬
-    </a>
-
-
-    <script src="script.js"></script>
-
+<header>
+<a class="logo" href="#home">HIFZA TECHNICAL<small>SERVICES · DUBAI</small></a>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="tag">Your property, our priority</div>
+<h1>Quality Technical Services.<br><span>Exceptional Care.</span></h1>
+<p>Looking for reliable home and office maintenance in Dubai? Contact Hifza Technical Services for AC, electrical, plumbing and other property maintenance enquiries.</p>
+<a class="btn" href="#services">Explore Our Services →</a>
+<a class="btn alt" href="https://wa.me/971562431691" target="_blank">WhatsApp Us</a>
+</section>
+
+<section class="services" id="services">
+<div class="heading">
+<div class="tag">What we do</div>
+<h2>Our <span>Services</span></h2>
+<p>Multiple maintenance solutions for your home and workplace.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="symbol">❄</div><h3>AC Service</h3><p>Air conditioning servicing and routine maintenance.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">✧</div><h3>AC Installation</h3><p>Air conditioning installation enquiries for your property.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">▤</div><h3>AC Duct Cleaning</h3><p>Duct cleaning services for AC systems.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">◉</div><h3>Coil Cleaning</h3><p>AC coil cleaning and maintenance enquiries.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">ϟ</div><h3>Electrical Services</h3><p>General electrical repair and maintenance.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">♧</div><h3>Plumbing Services</h3><p>Plumbing maintenance and repair enquiries.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">▰</div><h3>Painting Services</h3><p>Interior and exterior painting enquiries.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">▥</div><h3>Water Tank Cleaning</h3><p>Ask us about water tank cleaning services.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">⚒</div><h3>Handyman Services</h3><p>General repairs and property maintenance.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">⌂</div><h3>Carpentry Services</h3><p>Carpentry and furniture maintenance enquiries.</p><a href="#contact">ENQUIRE →</a></div>
+<div class="card"><div class="symbol">▦</div><h3>Tiling & Flooring</h3><p>Tile replacement, tiling and flooring enquiries.</p><a href="#contact">ENQUIRE →</a></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="about-box">
+<strong>H</strong>
+<h2>Hifza Technical Services</h2>
+<p>Dubai · United Arab Emirates</p>
+</div>
+<div>
+<div class="tag">About our company</div>
+<h2>One Contact for Your <span>Maintenance Needs</span></h2>
+<p>Hifza Technical Services offers a range of technical and property maintenance services in Dubai. Tell us about your requirements and contact us to request a quotation.</p>
+<a class="btn" href="#contact">Contact Our Team →</a>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="heading">
+<div class="tag">Get in touch</div>
+<h2>Request a <span>Quotation</span></h2>
+<p>Contact us to discuss the service you need.</p>
+</div>
+<div class="contact-grid">
+<div>
+<h3>Hifza Technical Services</h3>
+<p><strong>Phone / WhatsApp</strong><br><a href="tel:+971562431691">+971 56 243 1691</a></p>
+<p><strong>Email</strong><br><a href="mailto:hifzatechnicalservices@gmail.com">hifzatechnicalservices@gmail.com</a></p>
+<p><strong>Address</strong><br>Al Quoz, Latifa Bint Hamdan Street, Dubai, UAE</p>
+<a class="btn" href="https://wa.me/971562431691" target="_blank">Chat on WhatsApp →</a>
+</div>
+<form id="quoteForm">
+<label for="name">Your Name *</label>
+<input id="name" required placeholder="Enter your name">
+<label for="phone">Phone Number *</label>
+<input id="phone" type="tel" required placeholder="+971...">
+<label for="service">Service Required *</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>AC Service</option><option>AC Installation</option>
+<option>AC Duct Cleaning</option><option>Coil Cleaning</option>
+<option>Electrical Services</option><option>Plumbing Services</option>
+<option>Painting Services</option><option>Water Tank Cleaning</option>
+<option>Handyman Services</option><option>Carpentry Services</option>
+<option>Tiling & Flooring</option>
+</select>
+<label for="message">Job Details *</label>
+<textarea id="message" rows="4" required placeholder="Tell us what you need"></textarea>
+<button class="btn" type="submit">Prepare Email Enquiry →</button>
+<p style="font-size:12px">This opens your email application to send the enquiry.</p>
+</form>
+</div>
+</section>
+</main>
+<footer>© <span id="year"></span> Hifza Technical Services · Dubai, UAE</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+e.preventDefault();
+const name=document.getElementById('name').value;
+const phone=document.getElementById('phone').value;
+const service=document.getElementById('service').value;
+const message=document.getElementById('message').value;
+const subject=encodeURIComponent('Website enquiry - '+service);
+const body=encodeURIComponent('Name: '+name+'\nPhone: '+phone+'\nService: '+service+'\nDetails: '+message);
+window.location.href='mailto:hifzatechnicalservices@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
 </body>
 </html>
